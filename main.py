@@ -7,7 +7,7 @@ app = FastAPI(title="API", version="0.1.0")
 
 @app.get("/")
 def index():
-    return RedirectResponse("/docs", status_code=308(
+    return RedirectResponse("/docs", status_code=308)
 app.include_router(user.router)
 app.include_router(auth.router)
 
